@@ -1,0 +1,35 @@
+{
+  "franco_to_arabic": {
+    "ana": "أنا", "msh": "مش", "mish": "مش", "3ayz": "عايز", "3ayza": "عايزة", "3ayez": "عايز",
+    "ga3an": "جعان", "ga3ana": "جعانة", "3atshan": "عطشان", "3atshana": "عطشانة",
+    "z3lan": "زعلان", "z3lana": "زعلانة", "zalan": "زعلان",
+    "khayef": "خايف", "kha2ef": "خايف", "khayfa": "خايفة",
+    "te3ban": "تعبان", "ta3ban": "تعبان", "ta3bana": "تعبانة",
+    "mama": "ماما", "baba": "بابا", "fen": "فين", "amty": "امتى", "amta": "امتى",
+    "akl": "اكل", "mayya": "مية", "moya": "مية", "ashrab": "اشرب",
+    "el7amam": "الحمام", "hammam": "الحمام", "wage3": "واجع", "betwga3ny": "بتوجعني",
+    "darabny": "ضربني", "darabouny": "ضربوني", "el madrasa": "المدرسة", "madrasa": "مدرسة",
+    "el2olad": "الاولاد", "el bet": "البيت", "le3b": "لعب", "al3ab": "العب",
+    "esa": "دلوقتي", "delwa2ty": "دلوقتي", "delwa2ti": "دلوقتي",
+    "eh": "ايه", "hadi": "هادي", "hadya": "هادية", "ahda": "اهدى"
+  },
+  "intent_patterns": {
+    "need_food":     ["hungry","food","eat","جعان","جعانه","اكل","عايز اكل","ana ga3an","ga3an","3ayz akl","ga3ana"],
+    "need_water":    ["thirsty","water","drink","عطشان","عايز اشرب","مية","ميه","3atshan","3ayz ashrab","ashrab","moya"],
+    "need_bathroom": ["bathroom","toilet","pee","poo","الحمام","حمام","el7amam","hamam","bathroom"],
+    "need_parent":   ["mom","mama","dad","baba","parent","ماما","بابا","عايز ماما","عايز بابا","3ayz mama","3ayz baba"],
+    "pain":          ["hurts","pain","ache","sore","بيوجعني","واجعني","ألم","بتوجعني","wage3","bywag3ny"],
+    "sad":           ["sad","cry","crying","unhappy","زعلان","زعلانة","عياط","بعيط","z3lan","zalan"],
+    "angry":         ["angry","mad","upset","متضايق","زهقان","عصبت","غاضب"],
+    "scared":        ["scared","afraid","fear","fright","خايف","خايفة","مرعوب","khayef","kha2ef"],
+    "overstimulated":["too loud","too bright","overstimulated","الصوت عالي","النور قوي","الضوضاء","مش قادر اتحمل","انا متحوم"],
+    "open_calm_zone":["calm","relax","quiet","هادي","اهدى","نهدى","calm zone"],
+    "open_aac":      ["pictures","board","aac","عايز صور","لوحة","communicate"],
+    "open_schedule": ["what now","what next","schedule","بعد كده","بعد ايه","next","بعد دي","امتى"],
+    "open_tutorial": ["brush","teeth","wash hands","sanani","سناني","غسل ايدي","غسل سناني","يديا"],
+    "open_story":    ["story","tell me story","قصة","حكاية","احكيلي","ehky","story please"],
+    "open_game":     ["play","game","عايز العب","العب","نلعب","la3b","al3ab"],
+    "parent_mode":   ["parent mode","admin","ادمن","الاهل","parent","mom mode","pin"],
+    "emergency":     ["emergency","help me","911","انقذني","help help","ساعدوني"]
+  }
+}

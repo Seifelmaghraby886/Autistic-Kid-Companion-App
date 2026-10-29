@@ -1,0 +1,11 @@
+{
+  "microphone_id": 0,
+  "microphone_name": "Default",
+  "camera_id": 0,
+  "camera_name": "Default",
+  "camera_resolution": "640x480",
+  "mirror_camera": true,
+  "noise_reduction": true,
+  "auto_gain": true,
+  "speech_sensitivity": "medium"
+}

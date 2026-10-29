@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local config that should NOT be committed
+config/app_config.local.json
+.env
+.env.*
+
+# Local databases and logs
+database/aria.db
+database/aria.db-journal
+*.log
+
+# Trained model artifacts (large binaries)
+ml_training/checkpoints/
+ml_training/runs/
+
+# Build / packaging
+*.spec
+build_v2/
+release/
+
+# AI-tooling artifacts — these should never live in the project tree
+.claude/
+.claude-flow/
+.swarm/
+.mcp.json
+CLAUDE.md
+ruflo/
+.cursor/
+.copilot/
+.aider*
+.continue/

@@ -1,0 +1,14 @@
+{
+  "app_name": "ARIA OS",
+  "version": "1.0.0",
+  "default_language": "en",
+  "auto_listening_enabled": true,
+  "ai_provider": "auto",
+  "voice_provider": "auto",
+  "voice_style": "soft",
+  "elevenlabs_voice_id": "",
+  "safety_sensitivity": "medium",
+  "parent_pin_default": "1234",
+  "vad_mock_mode": true,
+  "robot_simulator_enabled": true
+}

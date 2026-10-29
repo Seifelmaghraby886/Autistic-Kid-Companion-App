@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wanees
+Comment=AI companion for autistic children
+Exec=__APP_DIR__/run_aria.sh
+Path=__APP_DIR__
+Terminal=false
+X-GNOME-Autostart-enabled=true

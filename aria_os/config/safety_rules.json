@@ -1,0 +1,15 @@
+{
+  "categories": {
+    "SELF_HARM":     {"severity": "critical", "keywords_en": ["kill myself","hurt myself","end my life","want to die","cut myself"], "keywords_ar": ["اقتل نفسي","اموت","ادبح نفسي","اذي نفسي"], "keywords_franco": ["a2tol nafsy","amout","azeey nafsy"]},
+    "ABUSE_RISK":    {"severity": "critical", "keywords_en": ["touched me","bad touch","secret touch","hit me at home","beats me"], "keywords_ar": ["لمسني","ضربني في البيت","عمل فيا حاجة وحشة"], "keywords_franco": ["lamesny","darabny fel bet"]},
+    "BULLYING":      {"severity": "high",     "keywords_en": ["bullied","they beat me","kids hit me","they tease"], "keywords_ar": ["ضربوني","بيتنمروا","بيتريقوا","بيضربوني"], "keywords_franco": ["darabouny","betnamaro"]},
+    "MEDICAL_EMERGENCY": {"severity": "critical", "keywords_en": ["can't breathe","bleeding","seizure","broken","very hot fever"], "keywords_ar": ["مش قادر اتنفس","بنزف","مكسور","سخونية شديدة","تشنج"], "keywords_franco": ["msh ader atnafes","banzef"]},
+    "PAIN":          {"severity": "medium",   "keywords_en": ["hurts","pain","ache","sore"], "keywords_ar": ["بيوجعني","واجعني","ألم","سخونية"], "keywords_franco": ["bywag3ny","bytewge3"]},
+    "HUNGER_THIRST": {"severity": "low",      "keywords_en": ["hungry","thirsty","want food","want water"], "keywords_ar": ["جعان","عطشان","عايز اكل","عايز اشرب"], "keywords_franco": ["ga3an","3atshan","3ayz akl","3ayz ashrab"]}
+  },
+  "high_risk_response": {
+    "en": "I hear you. You're safe with me. Let's talk to a trusted adult right now. Mama or Baba can help.",
+    "ar": "أنا سامعك. إنت في أمان معايا. خلينا نكلم حد كبير تثق فيه دلوقتي. ماما أو بابا هيساعدوك.",
+    "de": "Ich höre dich. Du bist sicher bei mir. Lass uns jetzt mit einem Erwachsenen sprechen."
+  }
+}
