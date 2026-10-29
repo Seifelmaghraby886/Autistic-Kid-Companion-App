@@ -56,3 +56,5 @@ ruflo/
 .copilot/
 .aider*
 .continue/
+
+.env
