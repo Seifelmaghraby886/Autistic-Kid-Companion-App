@@ -19,8 +19,9 @@ CFG_PATH = Path(__file__).parent.parent / "config" / "app_config.json"
 
 def _load_config():
     try:
-        with open(CFG_PATH) as f:
-            return json.load(f)
+        with open(CFG_PATH, encoding="utf-8") as f:
+            from core.secrets import merge_secrets
+            return merge_secrets(json.load(f))
     except Exception:
         return {}
 

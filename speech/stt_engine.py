@@ -360,7 +360,8 @@ class STTWorker(QObject):
             from pathlib import Path
             cfg = json.loads((Path(__file__).parent.parent / "config" /
                               "app_config.json").read_text(encoding="utf-8"))
-            key = (cfg.get("elevenlabs_api_key") or "").strip()
+            from core.secrets import merge_secrets
+            key = (merge_secrets(cfg).get("elevenlabs_api_key") or "").strip()
             if not key:
                 return ""
             import requests

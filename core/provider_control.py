@@ -39,15 +39,18 @@ DEFAULT_PROVIDERS = {
 
 def _load() -> dict:
     try:
-        return json.loads(_CFG_PATH.read_text(encoding="utf-8"))
+        from core.secrets import merge_secrets
+        return merge_secrets(json.loads(_CFG_PATH.read_text(encoding="utf-8")))
     except Exception:
         return {}
 
 
 def _save(cfg: dict) -> bool:
     try:
+        from core.secrets import strip_secrets
         _CFG_PATH.write_text(
-            json.dumps(cfg, indent=2, ensure_ascii=False), encoding="utf-8"
+            json.dumps(strip_secrets(cfg), indent=2, ensure_ascii=False),
+            encoding="utf-8",
         )
         return True
     except Exception:
@@ -86,8 +89,12 @@ def set_enabled(key: str, value: bool) -> bool:
 
 def set_api_key(cfg_key: str, value: str) -> bool:
     """Save (or clear) an API key in app_config.json. Returns True on success."""
+    value = (value or "").strip()
+    if not value:
+        from core.secrets import clear_secret
+        clear_secret(cfg_key)
     cfg = _load()
-    cfg[cfg_key] = (value or "").strip()
+    cfg[cfg_key] = value
     return _save(cfg)
 
 

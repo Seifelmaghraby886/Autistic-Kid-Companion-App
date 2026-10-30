@@ -23,16 +23,18 @@ CONFIG_PATH = ROOT / "config" / "app_config.json"
 
 def load_config():
     try:
-        with open(CONFIG_PATH) as f:
-            return json.load(f)
+        from core.secrets import merge_secrets
+        with open(CONFIG_PATH, encoding="utf-8") as f:
+            return merge_secrets(json.load(f))
     except Exception:
         return {}
 
 
 def save_config(cfg):
     try:
-        with open(CONFIG_PATH, "w") as f:
-            json.dump(cfg, f, indent=2)
+        from core.secrets import strip_secrets
+        with open(CONFIG_PATH, "w", encoding="utf-8") as f:
+            json.dump(strip_secrets(cfg), f, indent=2, ensure_ascii=False)
     except Exception as e:
         print(f"[Config save error] {e}")
 

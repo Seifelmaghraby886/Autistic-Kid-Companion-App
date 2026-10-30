@@ -231,8 +231,10 @@ def _load_tts_config():
     try:
         import json
         from pathlib import Path
-        with open(Path(__file__).parent.parent / "config" / "app_config.json") as f:
-            return json.load(f)
+        from core.secrets import merge_secrets
+        with open(Path(__file__).parent.parent / "config" / "app_config.json",
+                  encoding="utf-8") as f:
+            return merge_secrets(json.load(f))
     except Exception:
         return {}
 

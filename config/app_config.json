@@ -54,7 +54,8 @@
     "tts_edge": true,
     "tts_pyttsx3": true,
     "stt_whisper": true,
-    "stt_google": true
+    "stt_google": true,
+    "stt_elevenlabs": true
   },
   "reduce_motion": false,
   "auto_start_child": true

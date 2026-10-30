@@ -53,7 +53,8 @@ def _load_api_key():
         cfg_path = Path(__file__).parent.parent / "config" / "app_config.json"
         with open(cfg_path) as f:
             cfg = json.load(f)
-        return cfg.get("gemini_api_key", "").strip()
+        from core.secrets import merge_secrets
+        return merge_secrets(cfg).get("gemini_api_key", "").strip()
     except Exception:
         return ""
 
